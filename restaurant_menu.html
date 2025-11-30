@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 SPICES A/C FAMILY RESTAURANT MENU</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .category-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #8B0000;
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .category-header span {
+            font-size: 18px;
+            color: black;
+        }
+        .menu-items {
+            display: none;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item span {
+            font-size: 16px;
+        }
+        .menu-item span.price {
+            color: white;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #f1f1f1;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }
+        .expand-icon {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>7 SPICES A/C FAMILY RESTAURANT MENU</header>
+    <div class="menu-container">
+
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Veg Starters
+                <span class="expand-icon">+</span>
+            </div>
+
+            <div class="menu-items">
+
+                <div class="menu-item">
+                    <span>Onion Pakoda</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Veg Manchurian</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Gobi Manchurian</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Gobi 65</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chilli Gobi</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Crispy Corn</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Crispy Babycorn</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chilli Babycorn</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Crispy Mushroom</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Musroom 65</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Panner 65</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chilli Panner</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Non-Veg Starters
+                <span class="expand-icon">+</span>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span>Chicken 65</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chiclli Chicken</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Garlic Chicken</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Ginger Chicken</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chicken Manchurian</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chicken Wings (10 pcs)</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chicken Lollipop (5pcs)</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chicken 555</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chicken Pakoda</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Lemon Chicken</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Masala Ommelette</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Egg Bhurji</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Chilli Egg</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Egg 65</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Egg Manchurian</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Egg Masala (2 Eggs)</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Fish Fry</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Fish Chilli</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Fish Ginger</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Fish Apollo</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Prawns Fry</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Prawns 65</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Prawns Chilli</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Prawns Roast</span>
+                </div>
+            
+                <div class="menu-item">
+                    <span>Loose Prawns</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Indian Breads
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                <span>Pulka</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Butter Pulka</span>
+            </div>
+            </div>
+        </div>
+    
+            
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Veg Curries
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                <span>Plain Palak</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Dal Tadka</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Veg Manchurian Wet</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Mix Veg Curry</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Gobi Masala</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Capsicum Masala</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Babycorn Masala</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Kadai Veg</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Mushroom Masala</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Panner Butter Masala</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Palak Panner</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Mutter Panner</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Kadai Panner</span>
+            </div>
+            </div>
+        </div>
+    
+            
+
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Non-Veg Curries
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                <span>Andhra Chicken Curry</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Chicken Curry Boneless</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Butter Chicken Masala</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Kadai Chicken</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Fish Masala</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Prawn Masala</span>
+            </div>
+            </div>
+        </div>
+    
+            
+        
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Veg-Biryani
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                <span>Veg-Biryani</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Biryani Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Panner Biryani</span>
+            </div>
+            </div>
+        </div>
+    
+            
+
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Non-Veg Biryani
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                <span>Chicken Dum Biryani</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Chicken Fry Biryani</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Chicken Lollipop Biryani (4pcs)</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Chicken Wings Biryani (8pcs)</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Chicken Mugalai Biryani</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Chicken Biryani Boneless</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Fish Biryani</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Prawns Biryani</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Mutton Biryani</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Egg Biryani</span>
+            </div>
+
+
+            </div>
+        </div>
+    
+            
+        
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Veg Fried Rice
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                <span>Veg Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Sez-Veg Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Jeera Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Corn Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Panner Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Sez.Panner Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Mushroom Fried Rice</span>
+            </div>
+            </div>
+        </div>
+            
+
+        <div class="category">
+            <div class="category-header" onclick="toggleMenu(this)">
+                Non-Veg Fried Rice
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                <span>Egg Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Sez-Egg Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Chicken Friedrice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Sez.Chicken Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Spl.Chicken Fried Rice</span>
+            </div>
+        
+            <div class="menu-item">
+                <span>Prawns Friedrice</span>
+            </div>
+            </div>
+        </div>
+    
+            
+        
+        
+
+        
+    </div>
+    <footer></footer>
+
+    <script>
+        function toggleMenu(element) {
+            const menuItems = element.nextElementSibling;
+            const expandIcon = element.querySelector(".expand-icon");
+
+            if (menuItems.style.display === "block") {
+                menuItems.style.display = "none";
+                expandIcon.textContent = "+";
+            } else {
+                menuItems.style.display = "block";
+                expandIcon.textContent = "-";
+            }
+        }
+    </script>
+</body>
+</html>
